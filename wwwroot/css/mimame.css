@@ -1,0 +1,349 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-mimame {
+    background: #fdd952;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+    overflow: hidden;
+}
+.hero-mimame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('/images/Patron.png') repeat;
+    opacity: 0.25; /* Ajusta este valor para más o menos transparencia */
+    z-index: 1;
+    pointer-events: none;
+}
+.logo-mimame {
+    max-width: 320px;
+    width: 90vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 7% !important;
+    position: relative;
+    z-index: 2;
+}
+
+.mimame-intro-seccion {
+    background-color: #64a0dd;
+    padding: 50px 0 50px 0 !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    text-align: left;
+}
+.mimame-intro-seccion::before,
+.mimame-intro-seccion::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    background-image: url('/images/PatronConfeti.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.mimame-intro-seccion::before {
+    left: 0;
+}
+
+.mimame-intro-seccion::after {
+    right: 0;
+}
+
+.mimame-intro-seccion > * {
+    position: relative;
+    z-index: 1;
+}
+
+.mimame-intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.mimame-intro-img img {
+    width: 320px;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    background: #fff;
+    padding: 8px;
+}
+
+.mimame-intro-texto {
+    max-width: 500px;
+    color: #fff;
+}
+
+.mimame-intro-texto h2 {
+    font-size: 2.2em;
+    color: #c13b8a;
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.418);
+
+}
+
+.mimame-intro-texto h3 {
+    font-size: 1.3em;
+    color: #fff;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.mimame-intro-texto p {
+    font-size: 1em;
+    color: #e0e0e0;
+    line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+    .mimame-intro-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .mimame-intro-img img {
+        width: 90vw;
+    }
+    .logo-mimame {
+        max-width: 90vw;
+    }
+}
+
+.numeros-seccion {
+    width: 100vw;
+    background: #c13b8a;
+    padding: 60px 0 60px 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.numeros-seccion::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('/images/Patron.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.numeros-contenedor {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.numero-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1 0;
+}
+
+.numero-animado {
+    font-size: 3.5em;
+    color: #fdd952;
+    font-weight: 900;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    text-shadow: 2px 2px 3px #4e4e4e;
+
+}
+
+.numero-columna h3 {
+    font-size: 1.5em;
+    color: #64a0dd;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px #4e4e4e;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .numeros-contenedor {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    .numero-animado {
+        font-size: 2.5em;
+    }
+}
+
+.instagram-section {
+    background: #fdd952;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 16px 0 !important;
+    z-index: 0;
+}
+.instagram-section::before,
+.instagram-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    background-image: url('/images/PatronConfeti.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.instagram-section::before {
+    left: 0;
+}
+
+.instagram-section::after {
+    right: 0;
+}
+
+.instagram-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+.instagram-title {
+    color: #c13b8a;
+    font-size: 3em;
+    margin-bottom: 30px !important;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.507);
+}
+
+.instagram-embed-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.instagram-embed,
+.facebook-embed {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    min-width: 300px;
+    position: relative;
+}
+
+.instagram-embed iframe,
+.facebook-embed iframe {
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    width: 100%;
+    min-height: 600px;
+    background: #fff;
+}
+
+@media (max-width: 900px) {
+    .instagram-embed-row {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+    .instagram-embed,
+    .facebook-embed {
+        width: 90vw;
+        min-width: unset;
+    }
+    .instagram-embed iframe,
+    .facebook-embed iframe {
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-mimame {
+        min-height: 30vh;
+        padding: 16px 0 !important;
+    }
+    .logo-mimame {
+        max-width: 98vw;
+        padding-top: 16px !important;
+    }
+    .mimame-intro-seccion {
+        padding: 24px 0 24px 0 !important;
+    }
+    .mimame-intro-img img {
+        width: 98vw;
+        padding: 4px;
+    }
+    .mimame-intro-texto h2 {
+        font-size: 1.3em;
+    }
+    .mimame-intro-texto h3 {
+        font-size: 1em;
+    }
+    .mimame-intro-texto p {
+        font-size: 0.95em;
+    }
+    .numeros-seccion {
+        padding: 24px 0 24px 0 !important;
+    }
+    .numero-animado {
+        font-size: 1.5em;
+    }
+    .numero-columna h3 {
+        font-size: 1em;
+    }
+    .instagram-title {
+        font-size: 1.3em;
+        margin-bottom: 16px !important;
+    }
+    .instagram-embed,
+    .facebook-embed {
+        width: 98vw;
+        min-width: unset;
+    }
+    .instagram-embed iframe,
+    .facebook-embed iframe {
+        min-height: 300px;
+    }
+}

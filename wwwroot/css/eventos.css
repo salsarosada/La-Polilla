@@ -1,0 +1,286 @@
+h1{    
+    font-family: "Pattaya", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;        
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.eventos-seccion{
+    padding-top: 150px !important ;
+}
+
+.eventos-titulo{
+    font-size: 4em;
+    margin-bottom: 0 !important;
+    
+}
+
+.seccion-fondo-personalizada {
+    background-image: url('/images/eventos.jpg'); /* Cambia la ruta por la imagen que desees */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    position: relative;
+}
+.seccion-fondo-personalizada::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.45); /* Oscurece la imagen para mejor legibilidad */
+    z-index: 1;
+}
+.contenido-fondo-personalizada {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    max-width: 700px;
+}
+.titulo-fondo-personalizada {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.texto-fondo-personalizada {
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cuatro-contenedores-seccion {
+    background: #f3f3ed;
+    padding: 60px 0 !important;
+    display: flex;
+    justify-content: center;
+}
+.cuatro-contenedores {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contenedor-item {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 32px 24px 24px 24px !important;
+    text-align: center;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.contenedor-titulo {
+    font-size: 1.3em;
+    color: #c13b8a;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+.contenedor-desc {
+    font-size: 1em;
+    color: #444;
+}
+@media (max-width: 900px) {
+    .cuatro-contenedores {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .contenedor-item {
+        width: 90vw;
+    }
+}
+
+
+.agenda{
+    background-color: #64a0dd;
+    padding: 50px 0 50px 0 !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.agenda::before,
+.agenda::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    background-image: url('/images/PatronConfeti.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 0;
+    pointer-events: none;
+}
+.agenda::before {
+    left: 0;
+}
+
+.agenda::after {
+    right: 0;
+}
+
+.agenda > * {
+    position: relative;
+    z-index: 1;
+}
+.agenda-btn {
+    margin-top: 32px !important;
+    padding: 12px 36px !important;
+    background: #c13b8a;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 #fff, 4px 4px 0 #c13b8a;
+    transition: background 0.2s;
+    display: block;
+    text-decoration: none;
+}
+
+.agenda-btn:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #931980;
+}
+
+.agenda h2 {
+    font-size: 2.5em;
+    color: #fdd952;
+    margin-bottom: 24px !important;
+    text-shadow: 2px 2px 3px rgb(78, 78, 78);
+}
+
+.agenda-title{
+    font-size: 1.8em;
+    text-shadow: 2px 2px 3px rgb(78, 78, 78);
+    text-align: left;
+    color: #931980;
+}
+
+.agenda-text-info{
+    font-size: 1.2em;
+    color: white;
+    font-size: 1em;
+    font-weight: 200;
+    margin-bottom: 35px;
+    text-align: left;
+
+}
+
+.agenda-info{
+    min-width: 500px;
+}
+
+.numeros-seccion {
+    width: 100vw;
+    background: #c13b8a;
+    padding: 60px 0 60px 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.numeros-seccion::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('/images/Patron.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.numeros-contenedor {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.numero-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1 0;
+}
+
+.numero-animado {
+    font-size: 3.5em;
+    color: #fdd952;
+    font-weight: 900;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    text-shadow: 2px 2px 3px #4e4e4e;
+
+}
+
+.numero-columna h3 {
+    font-size: 1.5em;
+    color: #64a0dd;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px #4e4e4e;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .numeros-contenedor {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    .numero-animado {
+        font-size: 2.5em;
+    }
+}

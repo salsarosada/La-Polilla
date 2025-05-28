@@ -1,0 +1,309 @@
+h1{    
+    font-family: "Pattaya", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;        
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.contacto-section {
+    padding: 60px 0 !important;
+    background: #64a0dd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contacto-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('/images/Patron.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.contacto-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+.contacto-title {
+    color: #fdd952;
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 1px 1px 2px #4e4e4e;
+    letter-spacing: 1px;
+    padding: 60px 0 12px 0 !important;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacto-formulario {
+    background: #f3f3ed;
+    padding: 32px 24px !important;
+    border-radius: 18px;
+    min-width: 600px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    border: 1.5px solid #c13b8a;
+}
+
+.form-contacto label {
+    display: block;
+    margin-bottom: 8px !important;
+    color: #c13b8a;
+    font-weight: 700;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    width: 100%;
+    padding: 12px 10px !important;
+    margin-bottom: 18px !important;
+    border: 1.5px solid #c13b8a;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: inherit;
+    outline: none;
+    transition: border 0.2s;
+    background: #f3d0e5;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+    border: 2px solid #fdd952;
+    background: #fffbe6;
+}
+
+.form-contacto button {
+    background: #c13b8a;
+    color: #f3f3ed;
+    font-weight: 900;
+    font-size: 1.1em;
+    padding: 12px 36px !important;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 #fff, 4px 4px 0 #c13b8a;
+    transition: background 0.2s;
+}
+
+.form-contacto button:hover {
+    background: #931980;
+    color: #fff;
+}
+.contacto-mapa {
+    background: #fff;
+    border: 1.5px solid #c13b8a;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    min-width: 420px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 8px !important;
+}
+
+.contacto-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1100px;
+}
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.form-titulo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 8px;
+    color: #c13b8a;
+    text-shadow: 1px 1px 2px #4e4e4e;
+}
+
+.form-descripcion {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 18px;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 18px !important;
+}
+
+.form-row input {
+    flex: 1 1 0;
+    margin-bottom: 0 !important;
+}
+
+.form-contacto textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 250px;
+}
+
+.form-check {
+    display: flex;
+    align-items: left;
+    gap: 2px;
+    margin-bottom: 18px;
+    font-size: 0.98em;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.form-check input[type="checkbox"] {
+    margin-top: 3px !important;
+    justify-content:left;
+    align-items: left;
+    padding: 0 !important;
+    accent-color: #c13b8a;
+    width: 30px;
+}
+
+.form-check label {
+    color: #444;
+    font-weight: 400;
+}
+
+.form-check a {
+    color: #c13b8a;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.ver-mas-btn, .form-contacto button[type="submit"] {
+    background: #c13b8a;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1em;
+    padding: 12px 36px !important;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+.ver-mas-btn:hover, .form-contacto button[type="submit"]:hover {
+    background: #c13b8a;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+@media (max-width: 900px) {
+    .contacto-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+        max-width: 100vw;
+    }
+    .contacto-formulario,
+    .contacto-mapa {
+        max-width: 95vw;
+        min-width: unset;
+        width: 95vw;
+        padding: 16px 4vw !important;
+    }
+    .contacto-mapa {
+        min-width: unset;
+        max-width: 95vw;
+        width: 95vw;
+        padding: 8px 0 !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .contacto-title {
+        font-size: 2em;
+        padding: 30px 0 8px 0 !important;
+        max-width: 95vw;
+    }
+    .contacto-formulario {
+        min-width: unset;
+        max-width: 98vw;
+        width: 98vw;
+        padding: 12px 2vw !important;
+    }
+    .contacto-mapa {
+        min-width: unset;
+        max-width: 98vw;
+        width: 98vw;
+        padding: 4px 0 !important;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .contacto-title {
+        font-size: 1.3em;
+        padding: 18px 0 6px 0 !important;
+    }
+    .contacto-formulario,
+    .contacto-mapa {
+        padding: 4px 0 !important;
+        border-radius: 10px;
+    }
+    .contacto-formulario {
+        font-size: 0.95em;
+    }
+    .form-titulo {
+        font-size: 1.2em;
+    }
+    .form-descripcion {
+        font-size: 0.95em;
+    }
+}

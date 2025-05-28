@@ -1,0 +1,238 @@
+@page
+@model dynamic
+@{
+    ViewData["Title"] = "Sobre Nosotros";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - La Polilla</title>
+    <link rel="stylesheet" href="~/css/nosotros.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Banner de inicio -->
+    <section class="hero">
+        <h1>Sobre Nosotros</h1>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="sobre-nosotros">
+        <div class="sobre-nosotros-content">
+            <div class="sobre-nosotros-texto">
+                <h2>¡En la polilla hacemos las cosas bien y con ganas!</h2>
+                <p>
+                    Nacimos como una comisión de teatro en 1986 dentro de la organización juvenil llamada servir. Aunque otras comisiones se disolvieron, la de teatro persistió y se transformó en el grupo de títeres La Polilla. El nombre se eligió por su sonoridad y la asociación con las polillas (mariposas) que mientras son larvas y se alimentan hacen huequitos; Como nosotros queremos hacernos un huequito en el corazón de las personas.<br>
+                    Nos acompaña siempre un interés por influir en la comunidad, por asumir la problemática comunitaria como propia con sus rasgos de violencia, y de carencia de espacios para lo artístico y lo cultural, éste nos llevó a establecer programas tales como: nos vemos en el parque, noches de luna llena, arte esquina etc., y a establecer contactos con grupos en otras comunas de Medellín, con trabajos e inquietudes afines, que dieron posteriormente lugar a la conformación de colectivos y las redes juveniles.<br>
+                    La Polilla, ha desarrollado en su quehacer artístico y social una labor enmarcada en la sensibilización, fortalecimiento y desarrollo de los valores culturales y expresiones cohesivas de las personas de la comunidad.<br>
+                    La Polilla organiza uno de los eventos más impactantes en términos administrativos, logísticos y técnicos: el Festival Internacional de Mimos “MIMAME”. Este festival, de carácter internacional, reúne a artistas invitados de todo el mundo, incluyendo países como Australia, Alemania, Argentina, Bélgica, Brasil, España, Francia, Italia, Japón, México, Perú, Suiza y Venezuela.<br>
+                    Las polillas son atraídas por la luz. Así, La Polilla busca iluminar las sombras con su arte. En los rincones más oscuros, sus títeres danzan, sus historias brillan. El arte es su faro.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión Visión -->
+    <section class="mision-vision">
+        <div class="mision-vision-row mision">
+            <div class="mision-vision-texto">
+                <h2>Misión</h2>
+                <p>
+                    La Polilla, con su vibrante colorido y energía, encarna la esencia de una comparsa. Sus integrantes, emperifollados con trajes que reflejan su espíritu creativo, despliegan una alegría contagiosa a través de la música y el movimiento
+                </p>
+            </div>
+            <div class="mision-vision-imagen">
+                <img src="~/images/La-polilla-carnaval-04.webp" alt="Misión La Polilla" />
+            </div>
+        </div>
+        <div class="mision-vision-row vision">
+            <div class="mision-vision-imagen">
+                <img src="~/images/La-polilla-circo.webp" alt="Visión La Polilla" />
+            </div>
+            <div class="mision-vision-texto">
+                <h2>Visión</h2>
+                <p>
+                    La Polilla, donde la magia y la alegría se fusionan para hacer de tus eventos momentos inolvidables. En La Polilla, no solo creamos espectáculos, sino que también generamos emociones y recuerdos únicos. ¡Déjanos ser parte de tu próximo evento!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Premios -->
+    <section class="premios-timeline">
+        <h2 class="premios-timeline-title">Nuestros Premios</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-img puesto2"></div>
+                    <h3>1997</h3>
+                    <p>Segundo puesto premio "Medellín QUE YO PROMUEVO", entregado por el honorable Concejo de Medellín</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-img puesto2"></div>
+                    <h3>2002</h3>
+                    <p>Segundo puesto - Primer Titirifestival Premio Luis Fernando Pérez</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-img trofeo"></div>
+                    <h3>2006</h3>
+                    <p>Premio a la mejor comparsa en el Carnaval de Barranquilla</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-img puesto3"></div>
+                    <h3>2012</h3>
+                    <p>Tercer puesto "Premio a las Letras y las Artes" Secretaría de educación y cultura para Antioquia - Gobernación de Antioquia.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-img medalla"></div>
+                    <h3>2016</h3>
+                    <p>Órden al mérito cívico y empresarial mariscal Jorge Robledo Grado Plata, por 30 años de trayectoria y aporte al desarrollo social del departamento.</p>
+                </div>
+            </div>
+            <div class="timeline-line"></div>
+        </div>
+    </section>
+    
+    <!-- Grupos de Planta -->
+    <section class="grupos-planta">
+        <div class="grupos-planta-bg"></div>  
+         <h2 class="grupos-planta-titulo">Grupos de Planta</h2>   
+            <div class="grupos-planta-content">
+            <div class="tarjeta-grupo">
+                <img class="icono-grupo" src="~/images/eureka.webp" alt="Eureka" />
+                <div>
+                    <h3>Eureka</h3>
+                    <p>Grupo teatral conformado por jóvenes y adultos, es un proyecto experimental, creativo y con un sentido social; dónde a través de nuestra puesta en escena llevamos alegría a todas las edades</p>
+                </div>
+            </div>
+            <div class="tarjeta-grupo">
+                <img class="icono-grupo" src="~/images/almadelcarnaval.webp" alt="Alma del Carnaval" />
+                <div>
+                    <h3>Alma del Carnaval</h3>
+                    <p>Fundado en 2010 como semillero de danza, Alma del carnaval es un grupo enérgico centrado en bailes tropicales y danzas folclóricas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sección Números -->
+    <section class="numeros-seccion">
+        <div class="numeros-contenedor">
+            <div class="numero-columna">
+                <h2 class="numero-animado" data-numero="7">0</h2>
+                <h3>Reconocimientos</h3>
+            </div>
+            <div class="numero-columna">
+                <h2 class="numero-animado" data-numero="83">0</h2>
+                <h3>Talleres Impartidos</h3>
+            </div>
+            <div class="numero-columna">
+                <h2 class="numero-animado" data-numero="38">0</h2>
+                <h3>Años de Fundación</h3>
+            </div>
+        </div>
+    </section>
+    <!-- Sección Clientes -->
+    <section class="clientes-seccion">
+        <h2>Nuestros Clientes</h2>
+        <h3>Algunas organizaciones y empresas que han confiado en nosotros</h3>
+        <div class="clientes-carrusel-viewport" id="clientesCarruselViewport">
+            <div class="clientes-carrusel" id="clientesCarrusel">
+                <img src="/images/Clientes-Cementos_Argos.webp" alt="Cliente 1">
+                <img src="/images/Clientes-Comfenalco.webp" alt="Cliente 2">
+                <img src="/images/Clientes-Conconcreto.webp" alt="Cliente 3">
+                <img src="/images/clientes-epm.webp" alt="Cliente 4">
+                <img src="/images/Clientes-Esumer.webp" alt="Cliente 5">
+                <img src="/images/Clientes-GetCom.webp" alt="Cliente 6">
+                <img src="/images/Clientes-GrupoHangar.webp" alt="Cliente 7">
+                <img src="/images/Clientes-Universidad-de-Antioquia.webp" alt="Cliente 8">
+            </div>
+        </div>
+    </section>
+    <script>
+    // Carrusel tipo marquee: movimiento horizontal continuo a la derecha
+    document.addEventListener('DOMContentLoaded', function() {
+        const carrusel = document.getElementById('clientesCarrusel');
+        const viewport = document.getElementById('clientesCarruselViewport');
+
+        // Duplicar imágenes para efecto infinito
+        carrusel.innerHTML += carrusel.innerHTML;
+
+        let scrollPos = 0;
+        let velocidad = 1; // píxeles por frame
+
+        function moverCarrusel() {
+            scrollPos += velocidad;
+            if (scrollPos >= carrusel.scrollWidth / 2) {
+                scrollPos = 0;
+            }
+            viewport.scrollLeft = scrollPos;
+            requestAnimationFrame(moverCarrusel);
+        }
+
+        // Ajustar el ancho del viewport para mostrar 3 imágenes
+        function ajustarViewport() {
+            const imagen = carrusel.querySelector('img');
+            if (imagen) {
+                const imagenWidth = imagen.offsetWidth;
+                const style = window.getComputedStyle(carrusel);
+                const gap = parseInt(style.columnGap || style.gap || 0);
+                viewport.style.width = (imagenWidth * 3 + gap * 2) + 'px';
+            }
+        }
+
+        setTimeout(() => {
+            ajustarViewport();
+            moverCarrusel();
+        }, 200);
+
+        window.addEventListener('resize', ajustarViewport);
+    });
+    </script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        function animarNumero(elemento, final, duracion) {
+            let inicio = 0;
+            let incremento = final / (duracion / 16);
+            function actualizar() {
+                inicio += incremento;
+                if (inicio < final) {
+                    elemento.textContent = Math.floor(inicio) + "+";
+                    requestAnimationFrame(actualizar);
+                } else {
+                    elemento.textContent = final + "+";
+                }
+            }
+            actualizar();
+        }
+    
+        let animado = false;
+        const numerosSection = document.querySelector('.numeros-seccion');
+        const observer = new IntersectionObserver(function(entries) {
+            if (entries[0].isIntersecting && !animado) {
+                document.querySelectorAll('.numero-animado').forEach(function(el) {
+                    let final = parseInt(el.getAttribute('data-numero'));
+                    animarNumero(el, final, 1800);
+                });
+                animado = true;
+            }
+        }, { threshold: 0.3 });
+    
+        if (numerosSection) {
+            observer.observe(numerosSection);
+        }
+    });
+    </script>
+</body>
+</html>

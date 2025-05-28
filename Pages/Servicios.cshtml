@@ -1,0 +1,152 @@
+@page
+@model dynamic
+@{
+    ViewData["Title"] = "Servicios";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="~/css/servicios.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="svc-banner">
+        <h1>Servicios</h1>
+    </section>
+
+<section class="svc-tarjetas-seccion">
+    <div class="svc-tarjetas-fila">
+        <div class="svc-tarjeta">
+            <div class="svc-tarjeta-contenido">
+                <h3>Formación Artística</h3>
+                <p>Teatro, payasos, danza y música</p>
+                <a href="#formacion-artistica" class="svc-ver-mas-btn">Ver más</a>
+            </div>
+        </div>
+        <div class="svc-tarjeta">
+            <div class="svc-tarjeta-contenido">
+                <h3>Producción de Espectáculos</h3>
+                <p>Obras teatrales y espectáculos de danza</p>
+                <a href="#produccion-espectaculos" class="svc-ver-mas-btn">Ver más</a>
+            </div>
+        </div>
+        <div class="svc-tarjeta">
+            <div class="svc-tarjeta-contenido">
+                <h3>Eventos y Festivales</h3>
+                <p>Comparsas y carnavales, personajes temáticos, show de baile internacional y hora loca</p>
+                <a href="#eventos-festivales" class="svc-ver-mas-btn">Ver más</a>
+            </div>
+        </div>
+    </div>
+    <div class="svc-tarjetas-fila fila-abajo">
+        <div class="svc-tarjeta">
+            <div class="svc-tarjeta-contenido">
+                <h3>Alquiler de Espacios</h3>
+                <p>Salas de ensayo y espacio del teatro</p>
+                <a href="#servicios-educativos" class="svc-ver-mas-btn">Ver más</a>
+            </div>
+        </div>
+        <div class="svc-tarjeta">
+            <div class="svc-tarjeta-contenido">
+                <h3>Proyectos Comunitarios</h3>
+                <p>Intervenciones en espacios públicos, programas educativos y talleres para todas las edades</p>
+                <a href="#alquiler-espacios" class="svc-ver-mas-btn">Ver más</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de detalle para cada servicio -->
+<section id="formacion-artistica" class="svc-detalle-servicio">
+    <div class="svc-detalle-contenido">
+        <div class="svc-detalle-imagen">
+            <img src="/images/Servicio1.jpg" alt="Formación Artística">
+        </div>
+        <div class="svc-detalle-texto">
+            <h2>Formación Artística Integral</h2>
+            <p>Donde el arte se convierte en herramienta de vida.<br>
+            Nuestros programas de formación están diseñados para que niños, jóvenes, adultos y adultos mayores descubran su voz, su cuerpo y su creatividad. No importa si estás comenzando o ya tienes experiencia: aquí puedes explorar y crecer. <br><strong>Ofrecemos:</strong><br><strong>Teatro y Clown:</strong> Desarrolla tu expresión corporal, improvisación, juego escénico y comunicación emocional. Aquí te reirás, reflexionarás y aprenderás a habitar el escenario con verdad.<br>
+            <strong>Danza para todos:</strong> Desde ballet infantil hasta danzas folclóricas y urbanas. Movemos el cuerpo para liberar el alma. <br><strong>Iniciación musical:</strong> Juegos sonoros, ritmo, canto y exploración de instrumentos. Ideal para primeras etapas de aprendizaje artístico.<br><strong>Beneficios:</strong>Fortalecimiento emocional, habilidades comunicativas, trabajo en equipo y desarrollo de la sensibilidad artística.</p>
+        </div>
+    </div>
+</section>
+<section id="produccion-espectaculos" class="svc-detalle-servicio">
+    <div class="svc-detalle-contenido">
+        <div class="svc-detalle-imagen">
+            <img src="/images/Servicio2.jpg" alt="Producción de Espectáculos">
+        </div>
+        <div class="svc-detalle-texto">
+            <h2>Producción de Espectáculos</h2>
+            <p>Creamos arte que transforma.<br>En La Polilla producimos obras escénicas con sello social y comunitario. Desde el teatro clásico hasta creaciones originales con narrativas locales, nuestros montajes conectan con el público y generan reflexión.<br>Contamos con un elenco profesional y procesos colaborativos donde el público, a veces, también es protagonista.<br>
+            Organizamos funciones privadas, presentaciones en espacios públicos y giras culturales en Medellín y otras regiones.<br><strong>Ideal para:</strong> instituciones educativas, eventos culturales, festivales, organizaciones sociales o empresas con enfoque cultural.</p>
+        </div>
+    </div>
+</section>
+<section id="eventos-festivales" class="svc-detalle-servicio">
+    <div class="svc-detalle-contenido">
+        <div class="svc-detalle-imagen">
+            <img src="/images/Servicio3.jpg" alt="Eventos y Festivales">
+        </div>
+        <div class="svc-detalle-texto">
+            <h2>Eventos y Animaciones</h2>
+            <p>Llevamos la alegría a donde tú estés.<br>Nuestro equipo de artistas convierte cualquier evento en una experiencia mágica, divertida y única. Combinamos teatro, danza, música y color para animar todo tipo de celebraciones.<br><strong>Servicios disponibles:</strong><br>
+            <strong>Comparsas, desfiles y carnavales:</strong> Ritmo, vestuario, movimiento y alegría al mejor estilo popular.<br><strong>Hora loca y personajes temáticos:</strong> Zanqueros, arlequines, payasos, bailarines y artistas que encienden la fiesta.<br>
+            <strong>Shows internacionales:</strong> Recorridos danzados por culturas del mundo, ideales para eventos institucionales y públicos.<br><strong>Ideal para:</strong> fiestas empresariales, colegios, festivales comunitarios, ferias culturales y celebraciones familiares.</p>
+        </div>
+    </div>
+</section>
+<section id="servicios-educativos" class="svc-detalle-servicio">
+    <div class="svc-detalle-contenido">
+        <div class="svc-detalle-imagen">
+            <img src="/images/Servicio4.jpg" alt="Alquiler de Espacios Culturales">
+        </div>
+        <div class="svc-detalle-texto">
+            <h2>Alquiler de Espacios Culturales</h2>
+            <p>Tu arte merece un lugar donde crecer.<br>Nuestra sede es más que un espacio físico: es un hogar creativo. Ponemos a tu disposición ambientes cómodos, versátiles y bien ubicados para que puedas ensayar, dictar talleres, montar obras o realizar eventos.<br><strong>Espacios disponibles:</strong><br>
+            <strong>Salas de ensayo multifuncionales:</strong> Con espejos, piso adecuado y equipos de sonido.<br><strong>Teatro La Polilla:</strong> Sala con capacidad para 95 personas, iluminación escénica básica y excelente acústica.<br><strong>Ideal para:</strong> grupos de teatro, colectivos artísticos, clases independientes, funciones o encuentros culturales.</p>
+        </div>
+    </div>
+</section>
+<section id="alquiler-espacios" class="svc-detalle-servicio">
+    <div class="svc-detalle-contenido">
+        <div class="svc-detalle-imagen">
+            <img src="/images/Servicio5.jpg" alt="Proyectos Comunitarios y Educativos">
+        </div>
+        <div class="svc-detalle-texto">
+            <h2>Proyectos Comunitarios y Educativos</h2>
+            <p>Arte con propósito, arte para transformar.<br>Nuestra esencia está en lo social. Creamos proyectos culturales para comunidades, instituciones educativas y poblaciones vulnerables que buscan sanar, fortalecer la identidad y generar vínculos a través del arte.<br><strong>Iniciativas destacadas:</strong><br>
+            <strong>Arte en el barrio:</strong> Intervenciones escénicas y talleres gratuitos en el espacio público.<br><strong>Arte y escuela:</strong> Proyectos extracurriculares y curriculares que integran teatro, música y danza como herramientas pedagógicas.<br><strong>Talleres con enfoque social:</strong> Trabajo artístico con personas mayores, jóvenes en riesgo, mujeres y comunidades rurales o marginadas.<br>
+            <strong>Ideal para:</strong> alcaldías, ONGs, escuelas, fundaciones y programas comunitarios.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Contáctanos -->
+<section class="contactanos">
+    <div class="contactanos-content">
+        <div class="contactanos-texto">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes preguntas, comentarios o quieres agendar un evento con nosotros?<br>
+            Escríbenos y te responderemos lo más pronto posible.<br>
+            <strong>Dirección:</strong> Calle 23 No 76-85 Belén San Bernardo, Medellín - Colombia<br>
+            <strong>Teléfono:</strong> (+57) 301 443 5147<br>
+            <strong>Email:</strong> info@lapolilla.com.co
+            </p>
+        </div>
+        <div class="contactanos-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2841415369526!2d-75.5977364!3d6.226217699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429ea821e569b%3A0xf14574918d873be6!2sCorporacion%20Artistica%20La%20Polilla!5e0!3m2!1ses!2sco!4v1747021500907!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+</body>
+
+    

@@ -1,0 +1,299 @@
+@page
+@model dynamic
+@{
+    ViewData["Title"] = "Eventos";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="~/css/eventos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="eventos-seccion">
+    <h2 class="eventos-titulo">Eventos</h2>
+    <div class="eventos-slider">
+        <button class="eventos-slider-btn prev">&#10094;</button>
+        <div class="eventos-slider-track">
+            <div class="evento-contenedor active">
+                <!-- Primer evento -->
+                <div class="evento-imagen-slider">
+                    <div class="evento-imagen-track">
+                        <img src="/images/HorasdeVuelo.jpeg" alt="Horas de Vuelo 1" class="evento-img active" />
+                        <img src="/images/HorasdeVuelo2.jpg" alt="Horas de Vuelo 2" class="evento-img" />
+                        <img src="/images/HorasdeVuelo3.jpg" alt="Horas de Vuelo 3" class="evento-img" />
+                        <img src="/images/HorasdeVuelo4.jpg" alt="Horas de Vuelo 3" class="evento-img" />
+                        <img src="/images/HorasdeVuelo5.jpg" alt="Horas de Vuelo 3" class="evento-img" />
+                        <img src="/images/HorasdeVuelo6.jpg" alt="Horas de Vuelo 3" class="evento-img" />
+                        <img src="/images/HorasdeVuelo7.jpg" alt="Horas de Vuelo 3" class="evento-img" />
+                        <img src="/images/HorasdeVuelo8.jpg" alt="Horas de Vuelo 3" class="evento-img" />
+                    </div>
+                    <div class="evento-imagen-indicadores"></div>
+                </div>
+                <div class="evento-info">                    
+                    <h2 class="evento-titulo">Horas de Vuelo</h2>
+                    <div class="evento-fecha">
+                        <span class="evento-icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#c13b8a" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zm0-13H5V6h14v1z"/></svg>
+                        </span>
+                        <span class="evento-dia">22, 23 y 24 de mayo</span>
+                    </div>
+                    <p class="evento-descripcion">
+                        Es una experiencia de formación integral diseñada para actores y actrices en crecimiento, así como para soñadores que deseen sumergirse en el mundo de la actuación.<br>Más que un taller, es un laboratorio escénico donde la práctica, la exploración y el autoconocimiento se convierte en herramientas fundamentales.
+                    </p>
+                    <div class="btn-programate">
+                    <a href="https://wa.me/573014435147" class="evento-btn">Prográmate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="evento-contenedor">
+                <!-- Segundo evento -->
+                <div class="evento-imagen-slider">
+                    <div class="evento-imagen-track">
+                        <img src="/images/improcreando.jpg" alt="Improcreando" class="evento-img active" />
+                    </div>
+                    <div class="evento-imagen-indicadores"></div>
+                </div>
+                <div class="evento-info">                    
+                    <h2 class="evento-titulo">Improcreando</h2>
+                    <div class="evento-fecha">
+                        <span class="evento-icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#c13b8a" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zm0-13H5V6h14v1z"/></svg>
+                        </span>
+                        <span class="evento-dia">2 de mayo</span>
+                    </div>
+                    <p class="evento-descripcion">
+                        Te invitamos a disfrutar un show de improvisación teatral el cuál juega con anécdotas propias o del público para llevar a una realidad escénica
+                    </p>
+                    <div class="btn-programate">
+                    <a href="https://wa.me/573014435147" class="evento-btn">Prográmate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="evento-contenedor">
+                <!-- Tercer evento -->
+                <div class="evento-imagen-slider">
+                    <div class="evento-imagen-track">
+                        <img src="/images/elespiritudetutalento.jpg" alt="El espiritu de tu talento" class="evento-img active" />
+                    </div>
+                    <div class="evento-imagen-indicadores"></div>
+                </div>
+                <div class="evento-info">                    
+                    <h2 class="evento-titulo">El Espíritu de tu Talento</h2>
+                    <div class="evento-fecha">
+                        <span class="evento-icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#c13b8a" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zm0-13H5V6h14v1z"/></svg>
+                        </span>
+                        <span class="evento-dia">24 de abril</span>
+                    </div>
+                    <p class="evento-descripcion">
+                        Acompáñanos en este espacio formativo con el actor Julian Bustamante, donde hablaremos sobre el casting, el rol del actor y los retos de la industria audiovisual
+                    </p>
+                    <div class="btn-programate">
+                    <a href="https://wa.me/573014435147" class="evento-btn">Prográmate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="eventos-slider-btn next">&#10095;</button>
+    </div>
+</section>
+
+    <!-- Nueva sección con imagen de fondo -->
+    <section class="seccion-fondo-personalizada">
+        <div class="contenido-fondo-personalizada">
+            <h2 class="titulo-fondo-personalizada">Eventos y Reuniones</h2>
+            <p class="texto-fondo-personalizada">
+                En La Polilla nos especializamos en Comparsas, carnavales y obras de teatro, payasos, títeres, espectáculos artísticos, montajes teatrales, visita a la sala con el programa <b>Expedición Vamos al Teatro</b>, espectáculos para eventos sociales como hora loca, bodas, celebraciones, y más, bailarines, producción de eventos artísticos y actividades tipo BTL para empresas o organizaciones.
+            </p>
+        </div>
+    </section>
+
+       <!-- Nueva sección de 4 contenedores -->
+    <section class="cuatro-contenedores-seccion">
+        <div class="cuatro-contenedores">
+            <div class="contenedor-item">
+                <img src="/images/vamosalteatro.jpg" alt="vamosalteatro" class="contenedor-img">
+                <h3 class="contenedor-titulo">Expedición vamos al teatro</h3>
+                <p class="contenedor-desc">¿Quieres sumergirte en el mundo mágico del teatro? El programa “Expedición Vamos al Teatro” es tu pasaporte para una experiencia inolvidable. Descubre los procesos creativos detrás de una obra de arte y conoce los componentes de una sala teatral</p>
+            </div>
+            <div class="contenedor-item">
+                <img src="/images/almadelcarnaval.webp" alt="Carnavales y Comparsas" class="contenedor-img">
+                <h3 class="contenedor-titulo">Carnavales y Comparsas</h3>
+                <p class="contenedor-desc">La Polilla, donde la magia y la alegría se fusionan para hacer de tus eventos momentos inolvidables. En La Polilla, no solo creamos espectáculos, sino que también generamos emociones y recuerdos únicos. ¡Déjanos ser parte de tu próximo evento!</p>
+            </div>
+            <div class="contenedor-item">
+                <img src="/images/La-polilla-disfraces.webp" alt="Personajes Temáticos" class="contenedor-img">
+                <h3 class="contenedor-titulo">Personajes Temáticos</h3>
+                <p class="contenedor-desc">La Polilla, con su vibrante colorido y energía, encarna la esencia de una comparsa. Sus integrantes, emperifollados con trajes que reflejan su espíritu creativo, despliegan una alegría contagiosa a través de la música y el movimiento</p>
+            </div>
+            <div class="contenedor-item">
+                <img src="/images/EspectaculoBailarines.webp" alt="Espectáculo de Bailarines" class="contenedor-img">
+                <h3 class="contenedor-titulo">Espectáculo de Bailarines</h3>
+                <p class="contenedor-desc">En La Polilla, nos enorgullece ofrecer emocionantes espectáculos coreográficos que transportan a los espectadores a las épocas doradas de los años 50, 60, 70 y 80. Nuestros talentosos bailarines dan vida a personajes icónicos mientras se sumergen en la magia de la música y el movimiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="agenda">
+        <h2>Agéndate con Nosotros</h2>
+    <div class="agenda-flex">
+        <div class="agenda-item">
+            <iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=America%2FBogota&showPrint=0&showTabs=0&showCalendars=0&showTz=0&title=La%20Polilla&src=MTc1YmExYzNiODYxNGE1MTE2YzBjYzRlNmQ2ZDY5NzNlYWY4NjcwYzNlMzQxZGY5OTk2MTJiYTcxNmQzYzc4NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23EF6C00" style="border-width:0" width="500" height="500" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="agenda-info">
+            <h3 class="agenda-title">¿Deseas unirte a nuestro calendario para estar al día con nuestros eventos?</h3>
+            <p class="agenda-text-info">Suscríbete a nuestro calendario cultural y recibe notificaciones sobre talleres, funciones de teatro, conversatorios, clases de danza y mucho más.<br>Activa los recordatorios desde tu dispositivo y acompáñanos en cada evento sin perderte ningún detalle.<br>¡La cultura se vive mejor cuando haces parte de ella!</p>
+            <div class="btn-programate">
+                <a href="https://calendar.google.com/calendar/u/0/r?cid=175ba1c3b8614a5116c0cc4e6d6d6973eaf8670c3e341df999612ba716d3c786@group.calendar.google.com" class="agenda-btn">Ver Agenda Completa</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="numeros-seccion">
+        <div class="numeros-contenedor">
+            <div class="numero-columna">
+                <h2 class="numero-animado" data-numero="34">0</h2>
+                <h3>Años de experiencia</h3>
+            </div>
+            <div class="numero-columna">
+                <h2 class="numero-animado" data-numero="120">0</h2>
+                <h3>Eventos</h3>
+            </div>
+        </div>
+</section>
+
+ 
+
+    <script>
+// Slider de eventos (contenedor)
+const eventos = document.querySelectorAll('.evento-contenedor');
+const prevEventoBtn = document.querySelector('.eventos-slider-btn.prev');
+const nextEventoBtn = document.querySelector('.eventos-slider-btn.next');
+let currentEvento = 0;
+let autoSlideInterval = null;
+
+function showEvento(index) {
+    eventos.forEach((evento, i) => evento.classList.toggle('active', i === index));
+    currentEvento = index;
+}
+
+function nextEvento() {
+    let next = currentEvento + 1;
+    if (next >= eventos.length) next = 0;
+    showEvento(next);
+}
+
+function prevEvento() {
+    let prev = currentEvento - 1;
+    if (prev < 0) prev = eventos.length - 1;
+    showEvento(prev);
+}
+
+if(eventos.length) showEvento(0);
+
+if(prevEventoBtn && nextEventoBtn) {
+    prevEventoBtn.addEventListener('click', prevEvento);
+    nextEventoBtn.addEventListener('click', nextEvento);
+}
+
+function startAutoSlide() {
+    if (autoSlideInterval) clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(nextEvento, 4000); // Cambia cada 4 segundos
+}
+
+function stopAutoSlide() {
+    if (autoSlideInterval) clearInterval(autoSlideInterval);
+}
+
+const sliderTrack = document.querySelector('.eventos-slider-track');
+sliderTrack.addEventListener('mouseenter', stopAutoSlide);
+sliderTrack.addEventListener('mouseleave', startAutoSlide);
+
+startAutoSlide();
+
+// Slider de imágenes SOLO para el primer evento (el que tiene varias imágenes)
+const primerEvento = document.querySelector('.evento-contenedor .evento-imagen-slider');
+if (primerEvento) {
+    const images = primerEvento.querySelectorAll('.evento-img');
+    const indicators = primerEvento.querySelector('.evento-imagen-indicadores');
+    let current = 0;
+    let intervalId;
+
+    if (images.length > 1) {
+        // Generar puntos según cantidad de imágenes
+        indicators.innerHTML = '';
+        images.forEach((img, idx) => {
+            const dot = document.createElement('span');
+            dot.classList.add('evento-dot');
+            if(idx === 0) dot.classList.add('active');
+            dot.addEventListener('click', function() {
+                showImg(idx);
+                resetInterval();
+            });
+            indicators.appendChild(dot);
+        });
+        const dots = indicators.querySelectorAll('.evento-dot');
+
+        function showImg(idx) {
+            images.forEach((img, i) => img.classList.toggle('active', i === idx));
+            dots.forEach((dot, i) => dot.classList.toggle('active', i === idx));
+            current = idx;
+        }
+        function nextImg() {
+            let idx = (current + 1) % images.length;
+            showImg(idx);
+        }
+        function resetInterval() {
+            clearInterval(intervalId);
+            intervalId = setInterval(nextImg, 5000);
+        }
+        if(images.length) showImg(0);
+        intervalId = setInterval(nextImg, 5000);
+    }
+}
+
+// Animación de números
+document.addEventListener('DOMContentLoaded', function() {
+        function animarNumero(elemento, final, duracion) {
+            let inicio = 0;
+            let incremento = final / (duracion / 16);
+            function actualizar() {
+                inicio += incremento;
+                if (inicio < final) {
+                    elemento.textContent = Math.floor(inicio) + "+";
+                    requestAnimationFrame(actualizar);
+                } else {
+                    elemento.textContent = final + "+";
+                }
+            }
+            actualizar();
+        }
+    
+        let animado = false;
+        const numerosSection = document.querySelector('.numeros-seccion');
+        const observer = new IntersectionObserver(function(entries) {
+            if (entries[0].isIntersecting && !animado) {
+                document.querySelectorAll('.numero-animado').forEach(function(el) {
+                    let final = parseInt(el.getAttribute('data-numero'));
+                    animarNumero(el, final, 1800);
+                });
+                animado = true;
+            }
+        }, { threshold: 0.3 });
+    
+        if (numerosSection) {
+            observer.observe(numerosSection);
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+@page
+@model dynamic
+@{
+    ViewData["Title"] = "Contacto";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | La Polilla</title>
+    <link rel="stylesheet" href="~/css/contacto.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="contacto-section">
+    <h2 class="contacto-title">Contáctanos</h2>
+    <div class="contacto-content">
+        <div class="contacto-formulario">
+            <form method="post" class="form-contacto">
+                <h3 class="form-titulo">Envíanos un mensaje</h3>
+                <p class="form-descripcion">Por favor llena el formulario para ponerte en contacto con nosotros.</p>
+                <div class="form-row">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                </div>
+                <div class="form-row">
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                </div>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+                <div class="form-check">
+                    <input type="checkbox" id="terminos" required>
+                    <label for="terminos">
+                        He leído y acepto los <a href="#" target="_blank">Términos de Servicio</a> y la <a href="#" target="_blank">Política de Privacidad</a>.
+                    </label>
+                </div>
+                <button type="submit" class="ver-mas-btn">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="contactanos">
+    <div class="contactanos-content">
+        <div class="contactanos-texto">
+            <p>¿Tienes preguntas, comentarios o quieres agendar un evento con nosotros?<br>
+            Escríbenos y te responderemos lo más pronto posible.<br>
+            <strong>Dirección:</strong> Calle 23 No 76-85 Belén San Bernardo, Medellín - Colombia<br>
+            <strong>Teléfono:</strong> (+57) 301 443 5147<br>
+            <strong>Email:</strong> info@lapolilla.com.co
+            </p>
+        </div>
+        <div class="contactanos-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2841415369526!2d-75.5977364!3d6.226217699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429ea821e569b%3A0xf14574918d873be6!2sCorporacion%20Artistica%20La%20Polilla!5e0!3m2!1ses!2sco!4v1747021500907!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+    <section class="instagram-section">
+    <h2 class="instagram-title">Síguenos en Redes Sociales</h2>
+    <div class="instagram-embed-row">
+        <div class="instagram-embed">
+            <!-- Widget de Instagram -->
+            <iframe src="https://www.instagram.com/lapolillamed/embed" width="400" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+        <div class="facebook-embed">
+            <!-- Widget de Facebook -->
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flapolillamed&tabs=timeline&width=400&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.form-contacto');
+    if(form){
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            alert('Mensaje enviado');
+            form.reset();
+        });
+    }
+});
+</script>
+</body>
+</html>

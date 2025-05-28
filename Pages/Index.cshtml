@@ -1,0 +1,408 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporación Artística La Polilla</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <section class="hero">
+        <div class="hero-slide active" style="background-image: url('/images/Index1.webp');">
+            <div class="hero-slide-content">
+                <h1>La Polilla</h1>
+                <h2>Arte para el alma</h2>
+            </div>
+        </div>
+    </section>
+
+<section class="eventos-seccion">
+    <h2 class="eventos-titulo">Eventos</h2>
+    <div class="eventos-slider">
+        <button class="eventos-slider-btn prev">&#10094;</button>
+        <div class="eventos-slider-track">
+            <div class="evento-contenedor active">
+                <!-- Primer evento -->
+                <div class="evento-imagen-slider">
+                    <div class="evento-imagen-track">
+                        <img src="/images/HorasdeVuelo.jpeg" alt="Horas de Vuelo 1" class="evento-img active" />
+                        <img src="/images/HorasdeVuelo2.jpg" alt="Horas de Vuelo 2" class="evento-img" />
+                        <img src="/images/HorasdeVuelo3.jpg" alt="Horas de Vuelo 3" class="evento-img" />
+                        <img src="/images/HorasdeVuelo4.jpg" alt="Horas de Vuelo 3" class="evento-img" />
+                        <img src="/images/HorasdeVuelo5.jpg" alt="Horas de Vuelo 3" class="evento-img" />
+                        <img src="/images/HorasdeVuelo6.jpg" alt="Horas de Vuelo 3" class="evento-img" />
+                        <img src="/images/HorasdeVuelo7.jpg" alt="Horas de Vuelo 3" class="evento-img" />
+                        <img src="/images/HorasdeVuelo8.jpg" alt="Horas de Vuelo 3" class="evento-img" />
+                    </div>
+                    <div class="evento-imagen-indicadores"></div>
+                </div>
+                <div class="evento-info">                    
+                    <h2 class="evento-titulo">Horas de Vuelo</h2>
+                    <div class="evento-fecha">
+                        <span class="evento-icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#c13b8a" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zm0-13H5V6h14v1z"/></svg>
+                        </span>
+                        <span class="evento-dia">22, 23 y 24 de mayo</span>
+                    </div>
+                    <p class="evento-descripcion">
+                        Es una experiencia de formación integral diseñada para actores y actrices en crecimiento, así como para soñadores que deseen sumergirse en el mundo de la actuación.<br>Más que un taller, es un laboratorio escénico donde la práctica, la exploración y el autoconocimiento se convierte en herramientas fundamentales.
+                    </p>
+                    <div class="btn-programate">
+                    <a href="https://wa.me/573014435147" class="evento-btn">Prográmate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="evento-contenedor">
+                <!-- Segundo evento -->
+                <div class="evento-imagen-slider">
+                    <div class="evento-imagen-track">
+                        <img src="/images/improcreando.jpg" alt="Improcreando" class="evento-img active" />
+                    </div>
+                    <div class="evento-imagen-indicadores"></div>
+                </div>
+                <div class="evento-info">                    
+                    <h2 class="evento-titulo">Improcreando</h2>
+                    <div class="evento-fecha">
+                        <span class="evento-icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#c13b8a" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zm0-13H5V6h14v1z"/></svg>
+                        </span>
+                        <span class="evento-dia">2 de mayo</span>
+                    </div>
+                    <p class="evento-descripcion">
+                        Te invitamos a disfrutar un show de improvisación teatral el cuál juega con anécdotas propias o del público para llevar a una realidad escénica
+                    </p>
+                    <div class="btn-programate">
+                    <a href="https://wa.me/573014435147" class="evento-btn">Prográmate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="evento-contenedor">
+                <!-- Tercer evento -->
+                <div class="evento-imagen-slider">
+                    <div class="evento-imagen-track">
+                        <img src="/images/elespiritudetutalento.jpg" alt="El espiritu de tu talento" class="evento-img active" />
+                    </div>
+                    <div class="evento-imagen-indicadores"></div>
+                </div>
+                <div class="evento-info">                    
+                    <h2 class="evento-titulo">El Espíritu de tu Talento</h2>
+                    <div class="evento-fecha">
+                        <span class="evento-icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#c13b8a" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zm0-13H5V6h14v1z"/></svg>
+                        </span>
+                        <span class="evento-dia">24 de abril</span>
+                    </div>
+                    <p class="evento-descripcion">
+                        Acompáñanos en este espacio formativo con el actor Julian Bustamante, donde hablaremos sobre el casting, el rol del actor y los retos de la industria audiovisual
+                    </p>
+                   <div class="btn-programate">
+                    <a href="https://wa.me/573014435147" class="evento-btn">Prográmate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="eventos-slider-btn next">&#10095;</button>
+    </div>
+</section>
+
+<section class="servicios-tarjetas-seccion">
+    <h2>Servicios</h2>
+    <div class="servicios-tarjetas">
+        <div class="servicio-tarjeta">
+            <div class="tarjeta-contenido">
+                <h3>Danza</h3>
+                <p>Vive la experiencia del movimiento y la expresión corporal.</p>
+            </div>
+            <div class="tarjeta-imagen" style="background-image: url('/images/Danza.png');"></div>
+        </div>
+        <div class="servicio-tarjeta">
+            <div class="tarjeta-contenido">
+                <h3>Teatro</h3>
+                <p>Descubre el arte de interpretar y contar historias.</p>
+            </div>
+            <div class="tarjeta-imagen" style="background-image: url('/images/Teatro.png');"></div>
+        </div>
+        <div class="servicio-tarjeta">
+            <div class="tarjeta-contenido">
+                <h3>Música</h3>
+                <p>Explora tus talentos musicales y crea melodías únicas.</p>
+            </div>
+            <div class="tarjeta-imagen" style="background-image: url('/images/Musica.png');"></div>
+        </div>
+        <div class="servicio-tarjeta">
+            <div class="tarjeta-contenido">
+                <h3>Talleres</h3>
+                <p>Aprende y crece con nuestros talleres educativos.</p>
+            </div>
+            <div class="tarjeta-imagen" style="background-image: url('/images/Talleres.png');"></div>
+        </div>
+    </div>
+    <div>
+        <a href="/Servicios" class="ver-mas-btn">Ver Todos los Servicios</a>
+    </div>
+</section> 
+
+<section class="sobre-nosotros">
+    <div class="sobre-nosotros-content">
+        <div class="sobre-nosotros-texto">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                La Corporación Artística La Polilla tiene una hermosa visión: defender la alegría como un derecho humano a través del arte. Nuestro compromiso es contribuir al desarrollo social mediante herramientas como el mimo-clown, títeres, comparsa y danza de calidad. La Polilla no solo entretiene, sino que también inspira y transforma, creando un mundo más brillante y esperanzador para todos.<br>La polilla es un referente en la formación de artistas y creación de nuevas organizaciones.
+            </p>
+             <a class="sobre-nosotros-btn" href="/Nosotros">Conócenos</a>
+        </div>
+        <div class="sobre-nosotros-imagen">
+            <img src="~/images/IndexDerecha.jpg" alt="Sobre Nosotros La Polilla" />
+        </div>
+    </div>
+</section>
+
+<section class="premios-timeline">
+    <h2 class="premios-timeline-title">Nuestros Premios</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-img puesto2"></div>
+                <h3>1997</h3>
+                <p>Segundo puesto premio "Medellín QUE YO PROMUEVO", entregado por el honorable Concejo de Medellín</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-img puesto2"></div>
+                <h3>2002</h3>
+                <p>Segundo puesto - Primer Titirifestival Premio Luis Fernando Pérez</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-img trofeo"></div>
+                <h3>2006</h3>
+                <p>Ganadores de la Convocatoria de la Alcaldía de Medellín para el evento Medellín en Barcelona - Fiesta de la Mercé, Barcelona - España</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-img medalla"></div>
+                <h3>2007</h3>
+                <p>Mención de honor - II Encuentro Nacional de Teatro, Títeres y Mimos "entre la gente" Florida Blanca Santander.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-img medalla"></div>
+                <h3>2009</h3>
+                <p>Certificado de Responsabilidad Social - Fenalco Solidario.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-img puesto3"></div>
+                <h3>2009</h3>
+                <p>Tercer puesto "Premio a las Letras y las Artes" Secretaría de educación y cultura para Antioquia - Gobernación de Antioquia.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-img medalla"></div>
+                <h3>2016</h3>
+                <p>Órden al mérito cívico y empresarial mariscal Jorge Robledo Grado Plata, por 30 años de trayectoria y aporte al desarrollo social del departamento.</p>
+            </div>
+        </div>
+        <div class="timeline-line"></div>
+    </div>
+</section>
+
+
+
+<section class="agenda">
+    <h2>Agéndate con Nosotros</h2>
+    <div class="agenda-flex">
+        <div class="agenda-item">
+            <iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&ctz=America%2FBogota&showPrint=0&showTabs=0&showCalendars=0&showTz=0&title=La%20Polilla&src=MTc1YmExYzNiODYxNGE1MTE2YzBjYzRlNmQ2ZDY5NzNlYWY4NjcwYzNlMzQxZGY5OTk2MTJiYTcxNmQzYzc4NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23EF6C00" style="border-width:0" width="500" height="500" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="agenda-info">
+            <p class="agenda-text">¿Deseas unirte a nuestro calendario para estar al día con nuestros eventos?</p>
+            
+            <div class="btn-programate">
+                <a href="https://calendar.google.com/calendar/u/0/r?cid=175ba1c3b8614a5116c0cc4e6d6d6973eaf8670c3e341df999612ba716d3c786@group.calendar.google.com" class="agenda-btn">Ver Agenda Completa</a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="instagram-section">
+    <h2 class="instagram-title">Síguenos en Redes Sociales</h2>
+    <div class="instagram-embed-row">
+        <div class="instagram-embed">
+            <!-- Widget de Instagram -->
+            <iframe src="https://www.instagram.com/lapolillamed/embed" width="400" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+        <div class="facebook-embed">
+            <!-- Widget de Facebook -->
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flapolillamed&tabs=timeline&width=400&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+</section>
+
+<section class="contactanos">
+    <div class="contactanos-content">
+        <div class="contactanos-texto">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes preguntas, comentarios o quieres agendar un evento con nosotros?<br>
+            Escríbenos y te responderemos lo más pronto posible.<br>
+            <strong>Dirección:</strong> Calle 23 No 76-85 Belén San Bernardo, Medellín - Colombia<br>
+            <strong>Teléfono:</strong> (+57) 301 443 5147<br>
+            <strong>Email:</strong> info@lapolilla.com.co
+            </p>
+        </div>
+        <div class="contactanos-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2841415369526!2d-75.5977364!3d6.226217699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429ea821e569b%3A0xf14574918d873be6!2sCorporacion%20Artistica%20La%20Polilla!5e0!3m2!1ses!2sco!4v1747021500907!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Modal Suscripción -->
+<div id="modal-suscripcion" class="modal-suscripcion">
+  <div class="modal-suscripcion-contenido">
+    <span class="modal-cerrar" id="cerrar-modal">&times;</span>
+    <h2>¡Suscríbete a nuestro boletín!</h2>
+    <p>Recibe novedades, eventos y noticias de La Polilla directamente en tu correo.</p>
+    <form id="form-suscripcion">
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <button type="submit" class="ver-mas-btn">Suscribirme</button>
+    </form>
+  </div>
+</div>
+<script>
+// Slider de eventos (contenedor)
+const eventos = document.querySelectorAll('.evento-contenedor');
+const prevEventoBtn = document.querySelector('.eventos-slider-btn.prev');
+const nextEventoBtn = document.querySelector('.eventos-slider-btn.next');
+let currentEvento = 0;
+function showEvento(index) {
+    eventos.forEach((evento, i) => evento.classList.toggle('active', i === index));
+    currentEvento = index;
+}
+if(eventos.length) showEvento(0);
+if(prevEventoBtn && nextEventoBtn) {
+    prevEventoBtn.addEventListener('click', function() {
+        let newIndex = (currentEvento - 1 + eventos.length) % eventos.length;
+        showEvento(newIndex);
+    });
+    nextEventoBtn.addEventListener('click', function() {
+        let newIndex = (currentEvento + 1) % eventos.length;
+        showEvento(newIndex);
+    });
+}
+
+// Slider de imágenes dentro de cada evento con puntos y auto-avance
+document.querySelectorAll('.evento-imagen-slider').forEach(function(slider) {
+    const images = slider.querySelectorAll('.evento-img');
+    const indicators = slider.querySelector('.evento-imagen-indicadores');
+    let current = 0;
+    let intervalId;
+
+    // Generar puntos según cantidad de imágenes
+    indicators.innerHTML = '';
+    images.forEach((img, idx) => {
+        const dot = document.createElement('span');
+        dot.classList.add('evento-dot');
+        if(idx === 0) dot.classList.add('active');
+        dot.addEventListener('click', function() {
+            showImg(idx);
+            resetInterval();
+        });
+        indicators.appendChild(dot);
+    });
+    const dots = indicators.querySelectorAll('.evento-dot');
+
+    function showImg(idx) {
+        images.forEach((img, i) => img.classList.toggle('active', i === idx));
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === idx));
+        current = idx;
+    }
+    function nextImg() {
+        let idx = (current + 1) % images.length;
+        showImg(idx);
+    }
+    function resetInterval() {
+        clearInterval(intervalId);
+        intervalId = setInterval(nextImg, 5000);
+    }
+    if(images.length) showImg(0);
+    intervalId = setInterval(nextImg, 5000);
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-dot');
+    const prevBtn = document.querySelector('.hero-prev');
+    const nextBtn = document.querySelector('.hero-next');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+        currentSlide = index;
+    }
+
+    prevBtn.addEventListener('click', function() {
+        let newIndex = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(newIndex);
+    });
+
+    nextBtn.addEventListener('click', function() {
+        let newIndex = (currentSlide + 1) % slides.length;
+        showSlide(newIndex);
+    });
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', function() {
+            showSlide(i);
+        });
+    });
+    // Modal Suscripción
+    const modal = document.getElementById('modal-suscripcion');
+    const cerrar = document.getElementById('cerrar-modal');
+    // Mostrar siempre el modal al cargar la página
+    setTimeout(() => {
+        modal.style.display = 'flex';
+    }, 800);
+    cerrar.onclick = function() {
+        modal.style.display = 'none';
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+    document.getElementById('form-suscripcion').onsubmit = function(e) {
+        e.preventDefault();
+        modal.style.display = 'none';
+        alert('¡Gracias por suscribirte!');
+    }
+});
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - La_Polilla</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/La_Polilla.styles.css" asp-append-version="true" />
+</head>
+<body>
+     <header class="header">
+        <div class="logo">
+            <a href="/Index">
+                <img src="~/images/Logo.webp" alt="La Polilla Logo" height="60">
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="/Index" class="@(Context.Request.Path == "/Index" || Context.Request.Path == "/" ? "active" : "")">INICIO</a>
+            <a href="/Nosotros" class="@(Context.Request.Path == "/Nosotros" ? "active" : "")">NOSOTROS</a>
+            <a href="/Servicios" class="@(Context.Request.Path == "/Servicios" ? "active" : "")">SERVICIOS</a>
+            <a href="/Eventos" class="@(Context.Request.Path == "/Eventos" ? "active" : "")">EVENTOS</a>
+            <a href="/Mimame" class="@(Context.Request.Path == "/Mimame" ? "active" : "")">MIMAME</a>
+            <a href="/Contacto" class="@(Context.Request.Path == "/Contacto" ? "active" : "")">CONTACTO</a>
+        </nav>
+        <div class="menu-icon">
+            <span>&#9776;</span>
+        </div>
+    </header>
+    <div class="container-fluid ">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+   <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-nav">
+                <a href="/Index" class="@(Context.Request.Path == "/Index" || Context.Request.Path == "/" ? "active" : "")">INICIO</a>
+                <a href="/Nosotros" class="@(Context.Request.Path == "/Nosotros" ? "active" : "")">NOSOTROS</a>
+                <a href="/Servicios" class="@(Context.Request.Path == "/Servicios" ? "active" : "")">SERVICIOS</a>
+                <a href="/Eventos" class="@(Context.Request.Path == "/Eventos" ? "active" : "")">EVENTOS</a>
+                <a href="/Mimame" class="@(Context.Request.Path == "/Mimame" ? "active" : "")">MIMAME</a>
+                <a href="/Contacto" class="@(Context.Request.Path == "/Contacto" ? "active" : "")">CONTACTO</a>
+            </div>                        
+        </div>
+        
+        
+        <div class="footer-social">
+            <p>© 2025 Hecho con amor por <span class="estudiantes">estudiantes de comunicación</span></p>
+        </div>
+    </footer>
+
+    
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('.header');
+        if (!header) return;
+
+        if (window.scrollY > 10) {
+            header.classList.add('header-fixed');
+        } else {
+            header.classList.remove('header-fixed');
+        }
+    });
+    </script>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.querySelector('.menu-icon');
+    const nav = document.querySelector('.nav');
+    menuIcon.addEventListener('click', function() {
+        nav.classList.toggle('nav-open');
+    });
+});
+</script>
+</body>
+</html>
+<script>
+// Botón scroll top
+const btnScrollTop = document.getElementById('btn-scroll-top');
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 200) {
+        btnScrollTop.classList.add('show');
+    } else {
+        btnScrollTop.classList.remove('show');
+    }
+});
+btnScrollTop.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+<button id="btn-scroll-top" class="btn-scroll-top">
+    <img src="/images/arriba.png" alt="Subir" style="width: 20px; height: 20px;">
+</button>
+<a href="https://wa.me/573014435147" class="whatsapp-float" target="_blank" title="Chatea con nosotros por WhatsApp">
+    <img src="/images/whatsapp.png" alt="WhatsApp" style="width:60px; height:60px;">
+</a>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+     <!-- Íconos de redes sociales fijos -->
+     <div class="social-fixed">
+         <a href="https://www.facebook.com/lapolillamed" target="_blank" rel="noopener" aria-label="Facebook">
+             <img src="~/images/facebook.png" alt="Facebook" />
+         </a>
+         <a href="https://www.instagram.com/lapolillamed" target="_blank" rel="noopener" aria-label="Instagram">
+             <img src="~/images/instagram.png" alt="Instagram" />
+         </a>
+         <a href="https://www.youtube.com/channel/UCUMwtfDLCrDsbLKUm9FGGng" target="_blank" rel="noopener" aria-label="WhatsApp">
+             <img src="~/images/youtube.png" alt="WhatsApp" />
+         </a>
+     </div>
+</body>
+</html>

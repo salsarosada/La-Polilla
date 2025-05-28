@@ -1,0 +1,113 @@
+@page
+@model dynamic
+@{
+    ViewData["Title"] = "Mímame";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mímame</title>
+    <link rel="stylesheet" href="~/css/mimame.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Banner similar al inicio -->
+    <div class="hero-mimame">
+        <img src="/images/LogoMimame.webp" class="logo-mimame" alt="Logo Mímame" />
+    </div>
+
+
+    <!-- Sección de introducción -->
+    <section class="mimame-intro-seccion">
+        <div class="mimame-intro-content">
+            <div class="mimame-intro-img">
+                <img src="/images/Mimame.webp" alt="Mímame Introducción" />
+            </div>
+            <div class="mimame-intro-texto">
+                <h2>Mímame</h2>
+                <h3>Festival internacional de mimos y payasos</h3>
+                <p>
+                    A lo largo de 27 años, el Mímame ha brindado al público de Medellín y sus alrededores una amplia programación que agrupa tendencias artísticas como la pantomima, el clown, el teatro gestual, las artes circenses y las danzas rituales.
+                    <br>Ha vinculado a más de 35 países, con 450 artistas internacionales, 80 compañías y grupos nacionales, y 270 artistas locales.<br>
+                    En total, ha realizado 720 funciones y 75 talleres en técnicas del clown, pantomima y teatro gestual, contribuyendo al fortalecimiento y desarrollo de las artes escénicas de Medellín y Colombia. ¡Ha llegado a más de 300,000 personas<br>
+                    El Festival Mímame se centra en la pantomima y el teatro gestual, creando momentos mágicos donde el silencio y la risa se entrelazan.<br>
+                    Los artistas nacionales e internacionales se presentan en espacios públicos y teatros, facilitando el acceso a un público joven y estudiantil
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección Numeros -->
+    <section class="numeros-seccion">
+        <div class="numeros-contenedor">
+            <div class="numero-columna">
+                <h2 class="numero-animado" data-numero="27">0</h2>
+                <h3>Años de Experiencia</h3>
+            </div>
+            <div class="numero-columna">
+                <h2 class="numero-animado" data-numero="75">0</h2>
+                <h3>Talleres de Payasos</h3>
+            </div>
+            <div class="numero-columna">
+                <h2 class="numero-animado" data-numero="720">0</h2>
+                <h3>Funciones</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Instagram -->
+    <section class="instagram-section">
+    <h2 class="instagram-title">Síguenos en Redes Sociales</h2>
+    <div class="instagram-embed-row">
+        <div class="instagram-embed">
+            <!-- Widget de Instagram -->
+            <iframe src="https://www.instagram.com/festivalmimame/embed" width="400" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>
+        <div class="facebook-embed">
+            <!-- Widget de Facebook -->
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FFESTIVAL.MIMAME&tabs=timeline&width=400&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        function animarNumero(elemento, final, duracion) {
+            let inicio = 0;
+            let incremento = final / (duracion / 16);
+            function actualizar() {
+                inicio += incremento;
+                if (inicio < final) {
+                    elemento.textContent = Math.floor(inicio) + "+";
+                    requestAnimationFrame(actualizar);
+                } else {
+                    elemento.textContent = final + "+";
+                }
+            }
+            actualizar();
+        }
+    
+        let animado = false;
+        const numerosSection = document.querySelector('.numeros-seccion');
+        const observer = new IntersectionObserver(function(entries) {
+            if (entries[0].isIntersecting && !animado) {
+                document.querySelectorAll('.numero-animado').forEach(function(el) {
+                    let final = parseInt(el.getAttribute('data-numero'));
+                    animarNumero(el, final, 1800);
+                });
+                animado = true;
+            }
+        }, { threshold: 0.3 });
+    
+        if (numerosSection) {
+            observer.observe(numerosSection);
+        }
+    });
+    </script>
+</body>
+</html>
